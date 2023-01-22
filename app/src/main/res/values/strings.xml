@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DemoAndroidProject1</string>
+    <string name="email_hint">Type email address</string>
+</resources>
