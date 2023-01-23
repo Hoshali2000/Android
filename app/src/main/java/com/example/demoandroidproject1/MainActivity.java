@@ -4,9 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,7 +15,12 @@ public class MainActivity extends AppCompatActivity {
     }
     public void changeToLogin(View view)
     {
-        Intent intent=new Intent(this,LoginActivity.class);
+        Intent intent=new Intent(this, UserLoginActivity.class);
+        startActivity(intent);
+    }
+    public void changeToMerchantLogin(View view)
+    {
+        Intent intent=new Intent(this,MerchantLoginActivity.class);
         startActivity(intent);
     }
 }
