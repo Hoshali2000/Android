@@ -2,7 +2,9 @@ package com.example.demoandroidproject1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class MerchantRegisterActivity extends AppCompatActivity {
 
@@ -11,4 +13,10 @@ public class MerchantRegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_merchant_register);
     }
+    public void redirectToLogin(View view)
+    {
+        Intent intent=new Intent(this,MerchantLoginActivity.class);
+        startActivity(intent);
+    }
+
 }

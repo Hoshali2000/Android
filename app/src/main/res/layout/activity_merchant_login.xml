@@ -127,6 +127,7 @@
             android:layout_marginStart="70dp"
             android:layout_marginTop="20dp"
             android:backgroundTint="@color/secondary_blue"
+            android:onClick="redirectToMerchantRegister"
             android:text="Sign-up"
             android:textColor="@color/black"
             app:layout_constraintStart_toEndOf="@+id/btn_login"
