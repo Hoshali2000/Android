@@ -47,7 +47,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/ev_fs"
                 android:layout_width="260dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="21dp"
@@ -66,10 +66,10 @@
                 android:layout_marginTop="16dp"
                 android:text="Last Name"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+                app:layout_constraintTop_toBottomOf="@+id/ev_fs" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName3"
+                android:id="@+id/ev_ls"
                 android:layout_width="260dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="21dp"
@@ -88,10 +88,10 @@
                 android:layout_marginTop="16dp"
                 android:text="Email"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+                app:layout_constraintTop_toBottomOf="@+id/ev_ls" />
 
             <EditText
-                android:id="@+id/editTextTextEmailAddress2"
+                android:id="@+id/ev_em"
                 android:layout_width="260dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="21dp"
@@ -124,7 +124,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/editTextTextPassword2"
+                android:id="@+id/ev_ps"
                 android:layout_width="260dp"
                 android:layout_height="45dp"
                 android:layout_marginStart="21dp"
@@ -143,10 +143,10 @@
                 android:layout_marginTop="16dp"
                 android:text="City"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+                app:layout_constraintTop_toBottomOf="@+id/ev_ps" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName5"
+                android:id="@+id/ev_city"
                 android:layout_width="260dp"
                 android:layout_height="45dp"
                 android:layout_marginStart="21dp"
@@ -165,10 +165,10 @@
                 android:layout_marginTop="16dp"
                 android:text="State"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+                app:layout_constraintTop_toBottomOf="@+id/ev_city" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName6"
+                android:id="@+id/ev_state"
                 android:layout_width="260dp"
                 android:layout_height="45dp"
                 android:layout_marginStart="21dp"
@@ -187,10 +187,10 @@
                 android:layout_marginTop="16dp"
                 android:text="Phone Number"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
+                app:layout_constraintTop_toBottomOf="@+id/ev_state" />
 
             <EditText
-                android:id="@+id/editTextPhone"
+                android:id="@+id/ev_ph"
                 android:layout_width="260dp"
                 android:layout_height="45dp"
                 android:layout_marginStart="21dp"
@@ -209,7 +209,7 @@
                 android:layout_marginTop="16dp"
                 android:text="Company"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+                app:layout_constraintTop_toBottomOf="@+id/ev_ph" />
 
             <EditText
                 android:id="@+id/editTextTextPersonName2"
@@ -225,7 +225,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btn_reg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="51dp"
