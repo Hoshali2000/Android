@@ -1,8 +1,11 @@
 package com.example.demoandroidproject1;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -29,10 +32,12 @@ public class UserLoginActivity extends AppCompatActivity {
     {
         EditText editText=(EditText)view;
         String s= editText.getHint().toString();
-        if(s.equals(R.string.email_hint)){
-            View v1=findViewById(R.id.dv_email);
-            v1.setVisibility(View.INVISIBLE);
+        Log.i("hi",(""+s.equals(R.string.email_hint)));
+        View v1 = findViewById(R.id.dv_email);
+        if(s.equals(R.string.email_hint)) {
+            v1.setBackgroundColor(ContextCompat.getColor(this, R.color.grey_dark_2));
         }
+      v1.setFocusable(true);
     }
     public void userLogin(View view)
     {
@@ -54,6 +59,15 @@ public class UserLoginActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(JSONObject response) {
                         Log.i("response", response.toString());
+                        try {
+                            String token = response.getString("token");
+                            SharedPreferences sharedPreferences=getSharedPreferences("TOKEN", MODE_PRIVATE);
+                            SharedPreferences.Editor editor=sharedPreferences.edit();
+                            editor.putString("token",token);
+                            editor.commit();
+                        }catch (JSONException e){
+                            e.printStackTrace();
+                        }
                     }
                 },
                 new Response.ErrorListener() {
